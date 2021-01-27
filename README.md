@@ -14,10 +14,10 @@ WHERE T.jourCoursDate
 IN ('lundi','mardi','mercredi','jeudi','vendredi','samedi') AND cls.classNiveauidNiveau=001;
 
 4. alter table etudiant add password varchar(50);
-update etudiant set password = ora_hash(matricule) where matricule = valeur;
+update etudiant set password =&password(matricule) where matricule = &matricule;
 
 alter table enseignants add password varchar(50);
-update enseignants set password = ora_hash(matricule) where matricule = valeur;
+update enseignants set password =&password(matricule) where matricule = &matricule;
 
 5. script de l'emploi de temps
 SET ECHO OFF

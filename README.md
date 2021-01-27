@@ -1,6 +1,6 @@
-3. creation de l'objet vu
+
 3. creation de la vue
-CREATE VIEW emploisdetemps AS
+CREATE VIEW emploidetemps AS
 SELECT DISTINCT C.codeCours, T.jourCoursDate,T. TRANCHE,C.VOLUMEH FROM Cours C
 JOIN Typehoraire T
 ON C.codeCours= T.crsCodeCours
@@ -11,7 +11,7 @@ ON T.crsCodeCours=cls.crsCodeCours
 JOIN Classe Cl
 ON cl.specialiteNomSpec=cls.classSpecialiteNomspec
 WHERE T.jourCoursDate
- IN ('lundi','mardi','mercredi','jeudi','vendredi','samedi') AND cls.classNiveauidNiveau=001;
+IN ('lundi','mardi','mercredi','jeudi','vendredi','samedi') AND cls.classNiveauidNiveau=001;
 
 4. alter table etudiant add password varchar(50);
 update etudiant set password = ora_hash(matricule) where matricule = valeur;

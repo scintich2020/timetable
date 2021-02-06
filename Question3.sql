@@ -1,4 +1,4 @@
-CREATE VIEW Question3 AS
+CREATE VIEW maVue AS
 SELECT DISTINCT C.codeCours, 
                 T.jourCoursDate,
                 T. TRANCHE,

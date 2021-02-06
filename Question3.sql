@@ -3,7 +3,7 @@ SELECT DISTINCT C.codeCours,
                 T.jourCoursDate,
                 T. TRANCHE,
                 C.VOLUMEH 
-    FROM Cours C58
+    FROM Cours crs
 JOIN Typehoraire T
     ON C.codeCours= T.crsCodeCours
 JOIN Jourcours J

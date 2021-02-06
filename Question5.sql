@@ -1,8 +1,8 @@
 SET ECHO OFF
 SET MARKUP HTML ON SPOOL ON
-SPOOL emploiTempsTIPAM2.HTML
+SPOOL emploideTemps.HTML
 SELECT DISTINCT T.jourCoursDate as jours ,
-                  C.intituleCourt ||'('||C.codeCours||')' as cours ,
+                    C.intituleCourt ||'('||C.codeCours||')' as cours ,
                     C.credits as credits_cours,
                     'Trimestre'|| C.periodeAcademiqueIdTrim  as periodeTrimestrielle,
                     ce.specialiteNomSpec || cd.classNiveauidNiveau as specialite,

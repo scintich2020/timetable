@@ -3,7 +3,7 @@ SELECT DISTINCT C.codeCours,
                 T.jourCoursDate,
                 T. TRANCHE,
                 C.VOLUMEH 
-    FROM Cours crs
+    FROM Cours C
 JOIN Typehoraire T
     ON C.codeCours= T.crsCodeCours
 JOIN Jourcours J
@@ -15,4 +15,4 @@ JOIN Classe Cl
 WHERE T.jourCoursDate
  IN ('lundi','mardi','mercredi','jeudi','vendredi','samedi') AND cls.classNiveauidNiveau=001;
 
- SELECT * FROM Question3
+ SELECT * FROM maVue
